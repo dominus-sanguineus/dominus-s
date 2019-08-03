@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\nodejs\\node.exe',
+1 verbose cli   'C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'n' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData n
+8 silly fetchNamedPackageData n
+9 silly mapToRegistry name n
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'n',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'n',
+12 silly mapToRegistry   name: 'n',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/n
+14 verbose request uri https://registry.npmjs.org/n
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 06:20:13
+17 verbose request id d0e713eac3a86bbe
+18 http request GET https://registry.npmjs.org/n
+19 http 200 https://registry.npmjs.org/n
+20 verbose headers { date: 'Sat, 03 Aug 2019 03:20:10 GMT',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'transfer-encoding': 'chunked',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'set-cookie': [ '__cfduid=d251bcd489fc69ec2c260cd279c44cfe71564802410; expires=Sun, 02-Aug-20 03:20:10 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+20 verbose headers   'cf-cache-status': 'HIT',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'cf-ray': '500527790c30beb5-FRA',
+20 verbose headers   age: '3163',
+20 verbose headers   etag: 'W/"817a7cea354a5cb43862647eb4cd1d3e"',
+20 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 verbose headers   'last-modified': 'Fri, 02 Aug 2019 09:35:13 GMT',
+20 verbose headers   vary: 'accept-encoding, accept',
+20 verbose headers   'x-amz-meta-rev': '375-07dba481a74c38d231ac4a531d029d53',
+20 verbose headers   server: 'cloudflare',
+20 verbose headers   'content-encoding': 'gzip' }
+21 silly get cb [ 200,
+21 silly get   { date: 'Sat, 03 Aug 2019 03:20:10 GMT',
+21 silly get     'content-type': 'application/json',
+21 silly get     'transfer-encoding': 'chunked',
+21 silly get     connection: 'keep-alive',
+21 silly get     'set-cookie': [ '__cfduid=d251bcd489fc69ec2c260cd279c44cfe71564802410; expires=Sun, 02-Aug-20 03:20:10 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+21 silly get     'cf-cache-status': 'HIT',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'cf-ray': '500527790c30beb5-FRA',
+21 silly get     age: '3163',
+21 silly get     etag: 'W/"817a7cea354a5cb43862647eb4cd1d3e"',
+21 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 silly get     'last-modified': 'Fri, 02 Aug 2019 09:35:13 GMT',
+21 silly get     vary: 'accept-encoding, accept',
+21 silly get     'x-amz-meta-rev': '375-07dba481a74c38d231ac4a531d029d53',
+21 silly get     server: 'cloudflare',
+21 silly get     'content-encoding': 'gzip' } ]
+22 verbose get saving n to C:\Users\Ogrezem\AppData\Roaming\npm-cache\registry.npmjs.org\n\.cache.json
+23 verbose correctMkdir C:\Users\Ogrezem\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 verbose stack Error: Unsupported platform for n@5.0.2: wanted {"name":"n","description":"Interactively Manage All Your Node Versions","version":"5.0.2","author":{"name":"TJ Holowaychuk","email":"tj@vision-media.ca"},"homepage":"https://github.com/tj/n","bugs":{"url":"https://github.com/tj/n/issues"},"contributors":[{"name":"Travis Webb","email":"me@traviswebb.com","url":"tjw.io"},{"name":"Nimit Kalra","email":"me@nimit.io","url":"http://nimit.io"},{"name":"Troy Connor","email":"troy0820@gmail.com","url":"https://github.com/troy0820"}],"keywords":["nvm","node","version","manager","switcher","node","binary","env"],"bin":{"n":"./bin/n"},"repository":{"type":"git","url":"git://github.com/tj/n.git"},"scripts":{"test":"test/bin/run-all-tests"},"devDependencies":{"bats":"^1.1.0"},"preferGlobal":true,"os":["!win32"],"engines":{"node":"*"},"license":"MIT","gitHead":"6d24d40c9b7590a6bcf1ae2df07e43197a1b0be3","_id":"n@5.0.2","_nodeVersion":"10.16.0","_npmVersion":"6.9.0","dist":{"integrity":"sha512-MiD3O7W7dSbOIZUPsRmI9lKNjSpM4Gr1d0CWCXC+DOCRVdfsODysYWOwSRq5gSP3Aqh74XBeHhHdwXHwF8510w==","shasum":"6c0dca8f03034b3cf76dbb1c9335030019be0087","tarball":"https://registry.npmjs.org/n/-/n-5.0.2.tgz","fileCount":5,"unpackedSize":34457,"npm-signature":"-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdRAPOCRA9TVsSAnZWagAAd8cP/22bHcaGRyLdk4d32+Y3\nnQJTehuFx+ymJ85JcMw2Z0G30D3RaTERkUfJI8cPNZXtAdd9kYqUlW6TEIwu\n325aMrMhZbYq8BZz3CpI/OkpnGDCE+UgXR8NBAuq9hkfvWEPb7F3vtWPrJBr\nw/abdVrFPapJxYuCvaiax1J3lgDUpty2iT3XioZ7sL4Oc+whQ3f8sQ/i/rru\nse5y2ERnzA9gXQb/H0jk1CUDIg0w/pjDgHG0E4bjUVueEkejCr2BkzODEMBI\nLInkODZGLDJnu66ZlXoEyF3eav9D3FOUmZf7pY0D+soLx8ySGXoCU6kdc06M\nXHbaoWQz8el0JrD8Fg2KbQWF4eakwMXwhV63NUZQ6hfenzHPgJ1sTVnNR6E3\nHYK3wqfHQ/epFyZafBkeMj4D/F01vo2v+fjng2NXgnVb/t9Ta3EvQmYj1cHI\ndDJdN+RXBurQkomwrd6dCj3KLmsXKb8tMbt5mzkKLzhoapXnUMrdUCJXhvIF\nHua3BRn41fB2DT6tVVo3YHhKbIqxYTefwy4jeh9qapN6DvRXQGbDEVjgwFyt\nSdCoqSF/0sTisEJmo3bJhK536+ZaAuTTXq2Ls+kYZfe305Qoyf4L/b4tbusA\nYlKQwFBbIA32EgRJeaFRwdLKpZLakN6va9GzpCnqgYd689WWJPHjq8xdgd20\nlZub\r\n=zjkF\r\n-----END PGP SIGNATURE-----\r\n"},"maintainers":[{"name":"bat","email":"ben@benatkin.com"},{"name":"qw3rtman","email":"me@nimit.io"},{"name":"shadowspawn","email":"npm_j@ruru.gen.nz"},{"name":"tedgaydos","email":"tedgaydos@gmail.com"},{"name":"tjholowaychuk","email":"tj@vision-media.ca"},{"name":"tjwebb","email":"me@traviswebb.com"},{"name":"troy0820","email":"troy0820@gmail.com"}],"_npmUser":{"name":"shadowspawn","email":"npm_j@ruru.gen.nz"},"directories":{},"_npmOperationalInternal":{"host":"s3://npm-registry-packages","tmp":"tmp/n_5.0.2_1564738509508_0.41447094655627215"},"_hasShrinkwrap":false,"_from":"n","_resolved":"https://registry.npmjs.org/n/-/n-5.0.2.tgz","_shasum":"6c0dca8f03034b3cf76dbb1c9335030019be0087","_requested":{"raw":"n","scope":null,"escapedName":"n","name":"n","rawSpec":"","spec":"latest","type":"tag"},"_spec":"n","_where":"C:\\common\\JavaProjects\\spring-kotlin-with-vue1","_args":[[{"raw":"n","scope":null,"escapedName":"n","name":"n","rawSpec":"","spec":"latest","type":"tag"},"C:\\common\\JavaProjects\\spring-kotlin-with-vue1"]],"readme":"ERROR: No README data found!"} (current: {"os":"win32","cpu":"x64"})
+40 verbose stack     at checkPlatform (C:\nodejs\node_modules\npm\node_modules\npm-install-checks\index.js:45:14)
+40 verbose stack     at thenWarnEngineIssues (C:\nodejs\node_modules\npm\lib\install\validate-args.js:41:5)
+40 verbose stack     at C:\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+40 verbose stack     at checkEngine (C:\nodejs\node_modules\npm\node_modules\npm-install-checks\index.js:24:10)
+40 verbose stack     at module.exports.isInstallable (C:\nodejs\node_modules\npm\lib\install\validate-args.js:38:3)
+40 verbose stack     at Array.<anonymous> (C:\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+40 verbose stack     at LOOP (C:\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+40 verbose stack     at C:\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+40 verbose stack     at checkSelf (C:\nodejs\node_modules\npm\lib\install\validate-args.js:46:72)
+40 verbose stack     at Array.<anonymous> (C:\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+41 verbose pkgid n@5.0.2
+42 verbose cwd C:\common\JavaProjects\spring-kotlin-with-vue1
+43 error Windows_NT 6.1.7601
+44 error argv "C:\\nodejs\\node.exe" "C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "n"
+45 error node v6.11.3
+46 error npm  v3.10.10
+47 error code EBADPLATFORM
+48 error notsup Unsupported platform for n@5.0.2: wanted {"os":"!win32","arch":"any"} (current: {"os":"win32","arch":"x64"})
+49 error notsup Valid OS:    !win32
+49 error notsup Valid Arch:  any
+49 error notsup Actual OS:   win32
+49 error notsup Actual Arch: x64
+50 verbose exit [ 1, true ]
