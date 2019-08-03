@@ -1,8 +1,8 @@
 {
   "name": "spring-kotlin-with-vue1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ttt",
+  "main": "main.js",
   "dependencies": {
     "axios": "^0.19.0"
   },
