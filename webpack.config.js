@@ -1,5 +1,6 @@
 const path = require('path')
 const baseDirPath = './src/main/resources/static'
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
     entry: baseDirPath + "/main.js",
@@ -9,8 +10,24 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /\.js$/, use: 'babel-loader'},
-            {test: /\.vue$/, use: 'vue-loader'}
+            {
+                test: /\.vue$/,
+                use: 'vue-loader'
+            },
+            {
+                test: /\.js$/,
+                use: 'babel-loader'
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader'
+                ]
+            }
         ]
-    }
+    },
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 }
