@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/first.css">
+    <title>My first page</title>
+    <style>
+        #header {
+            height: 100px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            padding: 15px 0 0 30px;
+        }
+
+        #header p {
+            font-size: 50px;
+            margin: 0;
+            padding: 0 25px;
+            display: inline-block;
+            background-color: gold;
+            border-radius: 10px;
+        }
+
+        #navigation {
+            height: 60px;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        ul.nav-bar {
+            background-color: coral;
+            margin: 0;
+            padding-left: 400px;
+            list-style: none;
+        }
+
+        li.nav-element {
+            float: left;
+            display: inline;
+        }
+
+        li.nav-element a {
+            width: 100px;
+            background-color: fuchsia;
+            text-align: center;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin-right: 3px;
+            color: black;
+            font-style: normal;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: -apple-system, monospace;
+            padding: 14px 0 15px 0;
+        }
+
+        li.nav-element a:hover {
+            background-color: cyan;
+        }
+
+        #first-sidebar {
+            float: left;
+            width: 200px;
+            height: 1000px;
+            background-color: burlywood;
+        }
+
+        #second-sidebar {
+            float: right;
+            width: 200px;
+            height: 1000px;
+            background-color: aqua;
+        }
+
+        #footer {
+            clear: both;
+            height: 40px;
+            background-color: chartreuse;
+        }
+
+        #main {
+            background-color: aliceblue;
+            padding: 25px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        #main img {
+            display: block;
+            margin: 10px auto 0 auto;
+        }
+
+        #main h1 {
+            margin: 15px 0 30px 0;
+            text-align: center;
+        }
+
+        #header p, #main h1, p {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", monospace;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div id="header">
+        <p>Ogrezem</p>
+    </div>
+    <div id="navigation">
+        <ul class="nav-bar">
+            <li class="nav-element"><a href="#">Главная</a></li>
+            <li class="nav-element"><a href="#">Обо мне</a></li>
+            <li class="nav-element"><a href="#">Новости</a></li>
+            <li class="nav-element"><a href="#">Блог</a></li>
+        </ul>
+    </div>
+    <div id="first-sidebar"></div>
+    <div id="second-sidebar"></div>
+    <div id="main">
+        <h1>Новости</h1>
+        <p>
+            Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил,
+            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой
+            спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый,
+            разделенный дугообразными чешуйками живот, на верхушке которого еле держалось
+            готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие
+            по сравнению с остальным телом ножки беспомощно копошились у него перед глазами.
+            «Что со мной случилось?» – подумал он. Это не было сном. Его комната, настоящая,
+            разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех
+            хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон
+            – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного
+            журнала и вставил в красивую золоченую рамку.
+        </p>
+        <img src="https://img-fotki.yandex.ru/get/15597/162974174.14/0_10bb29_501b7ab9_L.jpg" alt="кошкодевочка">
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

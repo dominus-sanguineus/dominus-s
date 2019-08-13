@@ -1,22 +1,37 @@
 const path = require('path')
-const baseDirPath = './src/main/resources/static'
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const baseDirPath = './src/main/resources/static'
 
 module.exports = {
+    mode: 'development',
+    devtool: "source-map",
     entry: baseDirPath + "/main.js",
     output: {
         path: path.resolve(baseDirPath, "dist"),
         filename: "bundle.js"
     },
+    devServer: {
+        historyApiFallback: true
+    },
     module: {
         rules: [
             {
-                test: /\.vue$/,
-                use: 'vue-loader'
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             },
             {
-                test: /\.js$/,
-                use: 'babel-loader'
+                test: /\.vue$/,
+                use: 'vue-loader',
+                // resolve: {
+                //     modules: [
+                //         './src/main/resources/components'
+                //     ]
+                // }
             },
             {
                 test: /\.css$/,
@@ -26,26 +41,48 @@ module.exports = {
                 ]
             },
             {
-                test: /\.scss$/,
+                test: /\.(sass|scss)$/,
                 use: [
                     'vue-style-loader',
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
                     {
                         loader: 'sass-loader',
                         options: {
-                            indentedSyntax: true
+                            indentedSyntax: true,
+                            sourceMap: true
                         }
                     }
-                ]
+                ],
+                resolve: {
+                    modules: [
+                        baseDirPath + "/style"
+                    ]
+                }
             },
             {
                 test: /\.ts$/,
                 loader: 'ts-loader',
-                options: { appendTsSuffixTo: [/\.vue$/] }
+                options: {appendTsSuffixTo: [/\.vue$/]}
             }
         ]
     },
     plugins: [
         new VueLoaderPlugin()
-    ]
+    ],
+    resolve: {
+        modules: [
+            path.resolve('./src/main/resources/'),
+            path.resolve(baseDirPath),
+            path.resolve(__dirname, 'node_modules')
+        ],
+        extensions: ['.js', '.vue', '.json', 'scss', 'sass'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js',
+        }
+    }
 }
