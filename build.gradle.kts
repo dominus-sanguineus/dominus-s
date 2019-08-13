@@ -10,6 +10,7 @@ plugins {
 group = "ru.ogrezem"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_10
+java.targetCompatibility = JavaVersion.VERSION_1_10
 
 val developmentOnly by configurations.creating
 configurations {
