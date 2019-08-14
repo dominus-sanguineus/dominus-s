@@ -1,7 +1,7 @@
 <template>
     <div>
         <basic-chat/>
-        <accounts-list/>
+<!--        <accounts-list/>-->
         <countries-list/>
     </div>
 </template>

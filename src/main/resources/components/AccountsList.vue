@@ -20,7 +20,7 @@
         },
         methods: {
             switchAllAccounts() {
-                Vue.http.get('http://localhost:8086/account')
+                Vue.http.get('https://localhost/account')
                     .then(value => {
                         this.accounts = value.body
                         console.log(this.accounts)
