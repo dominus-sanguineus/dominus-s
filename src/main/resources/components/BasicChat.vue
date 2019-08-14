@@ -138,7 +138,7 @@
     }
 
     let userId = Math.round(Math.random() * 100)
-    const socket = new SockJs("https://localhost/ogr-ws")
+    const socket = new SockJs("https://dominus-s.herokuapp.com/ogr-ws")
     const client = Stomp.over(socket);
 
     const commandsList = [
