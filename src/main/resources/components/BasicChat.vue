@@ -138,7 +138,7 @@
     }
 
     let userId = Math.round(Math.random() * 100)
-    const socket = new SockJs("http://localhost:8086/ogr-ws")
+    const socket = new SockJs("https://localhost:8086/ogr-ws")
     const client = Stomp.over(socket);
 
     const commandsList = [
