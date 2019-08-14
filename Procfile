@@ -1,0 +1,1 @@
+web: java -jar build/libs/spring-kotlin-with-vue1-0.0.1-SNAPSHOT.jar
