@@ -138,7 +138,8 @@
     }
 
     let userId = generateUserId()
-    const socket = new SockJs("https://localhost/ogr-ws")
+    const sockJsHost = 'dominus-s.herokuapp.com'
+    const socket = new SockJs("https://"+ require("os").hostname() +"/ogr-ws")
     const client = Stomp.over(socket);
 
     const commandsList = [
